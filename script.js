@@ -119,6 +119,7 @@ function showMyDB(hidden) {
     }
 }
 
+<<<<<<< HEAD
 showMyDB(personalMovieDB.privat)
 
 function writeYourGenres() {
@@ -128,3 +129,32 @@ function writeYourGenres() {
     }
 }
  writeYourGenres();
+=======
+let i = 0;
+while (i < 2) {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+          b = prompt('На сколько оцените его?','');
+  i++;
+  if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+    personalMovieDB.movies[a] = b;
+    console.log('done');
+} else {
+    console.log('error');
+    i--;
+}
+}
+
+
+let i = 0;
+do {
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = prompt('На сколько оцените его?','');
+  i++;
+  if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+    personalMovieDB.movies[a] = b;
+    console.log('done');
+} else {
+    console.log('error');
+    i--;}
+} while (i < 2);
+>>>>>>> c11f1124b5a8dd2336376275e6c1d4b22f21ef8c
